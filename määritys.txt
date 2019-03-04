@@ -1,1 +1,1 @@
-teemme tekstin lähettäjän ja sovellamme esimerkistä oman version. 2019KOOP
+Teemme sähköpostin lähettäjän ja käytämme gittiä sen päivittämiseen.
