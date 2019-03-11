@@ -29,9 +29,9 @@
 $message
 HTML;
 
-       $headers = "From: $email\r\n";
+    $headers .= 'From: <sähköposti.sovellus>' . "\r\n";
        $headers .= "Content-type: text/html\r\n";
-
+    
        // send the email
        mail($to, $subject, $body, $headers);
 
