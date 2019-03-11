@@ -30,11 +30,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 		file_put_contents( $file, $_POST['r2'] . " " . PHP_EOL, FILE_APPEND); 
 		file_put_contents( $file, "pp.kk.vv"   . " " . PHP_EOL, FILE_APPEND); //Exceliä varten 
 		file_put_contents( $file, "pp.kk.vv"   . " " . PHP_EOL, FILE_APPEND); //Exceliä varten		
-		file_put_contents( $file, $_POST['r21'] . " " . PHP_EOL, FILE_APPEND); 
 		file_put_contents( $file, $_POST['r22'] . " " . PHP_EOL, FILE_APPEND); 
 		file_put_contents( $file, $_POST['r23'] . " " . PHP_EOL, FILE_APPEND);  
 		file_put_contents( $file, $_POST['r25'] . " " . PHP_EOL, FILE_APPEND); 
-		file_put_contents( $file, $_POST['r26'] . " " . PHP_EOL, FILE_APPEND); 
 		file_put_contents( $file, $_POST['r27'] . " " . PHP_EOL, FILE_APPEND); 
 		file_put_contents( $file, "*LOPPU* Voit viedä tiedot esim. Exceliin tästä" . " " . PHP_EOL, FILE_APPEND);
 		}
@@ -70,15 +68,12 @@ Ryhmän tunnus<br><textarea maxlength="50" placeholder="Opiskelijaryhmän tunnus
 <!-- 1PVM <br><textarea maxlength="6" placeholder="PVM" name="r3" rows="1" cols="85" ></textarea> <br> -->
 <!-- 2PVM <br><textarea maxlength="6" placeholder="PVM" name="r4" rows="1" cols="85" ></textarea> <br> -->
 	  
-Puhelin<br><textarea   maxlength="50" placeholder="puhelin" name="r21" rows="2" cols="85" ></textarea> <br>
 Sähköposti    
 <br><input   type="email" maxlength="150" placeholder="sähköposti" name="r22" size="84" rows="2" cols="84" ><br>
 Käyntiosoite  
 <br><textarea maxlength="50" placeholder="käyntiosoite jos eri kuin yllä" name="r23" rows="2" cols="85" ></textarea> <br>
 Puhelin 
 <br><textarea maxlength="50" placeholder="puhelin" name="r25" rows="2" cols="85" ></textarea> <br>
-Sähköposti  
-<br><input type="email" maxlength="50" placeholder="sähköposti" name="r26" size="84"  ><br>
 MUUTA    
 <br><textarea maxlength="50" placeholder="...lisätietoja..." name="r27" rows="2" cols="85" ></textarea> <br>
 <br>
