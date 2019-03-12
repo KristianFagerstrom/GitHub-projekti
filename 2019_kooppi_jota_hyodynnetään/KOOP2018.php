@@ -3,13 +3,24 @@
 <header>
 <style>
 	body {
-		text-align: left; // center;
-		background-color: white;
+    text-align: center;
+// center;
+    background-color: white;
+    background-image: url(images/blinds-close-up-dark-586417.jpg);
+    background-size: 100% auto;
+    color: #FFFFFF;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}	
 	textarea {
-		background-color: white;
+    background-color: white;
+    text-align: center;
 	}
 	
+body div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
 </style>
 </header>
 
@@ -58,7 +69,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 else 
 {
 ?>
-<h1> VAAK <br> Opinto Teht&#228;v&#228; </h1>
+	<div>
+<h1> K&#196;&#196;K <br> Anna meille tietosi </h1>
 <h3> Gitti Projekti  </h3>
 <br>
 <form action="KOOP2018.php" method="post">
@@ -81,5 +93,5 @@ JATKA PAINAMALLA T&#196;ST&#196;! <input type="submit" name="submit" value="PAIN
 <?php 
 }  
 ?>
-
+</div>
 </html>
