@@ -58,26 +58,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 else 
 {
 ?>
-<h1> VAAK <br> Opinto Tehtävä </h1>
+<h1> VAAK <br> Opinto Teht&#228;v&#228; </h1>
 <h3> Gitti Projekti  </h3>
 <br>
 <form action="KOOP2018.php" method="post">
 <h3> Opiskelijan tiedot </h3>
 Opiskelijan nimi<br><textarea   maxlength="50" placeholder="Sukunimi Etunimi" name="r1" rows="2" cols="85" ></textarea> <br>
-Ryhmän tunnus<br><textarea maxlength="50" placeholder="Opiskelijaryhmän tunnus" name="r2" rows="2" cols="85" ></textarea> <br>
+Ryhm&#228;n tunnus<br><textarea maxlength="50" placeholder="Opiskelijaryhm&#228;n tunnus" name="r2" rows="2" cols="85" ></textarea> <br>
 <!-- 1PVM <br><textarea maxlength="6" placeholder="PVM" name="r3" rows="1" cols="85" ></textarea> <br> -->
 <!-- 2PVM <br><textarea maxlength="6" placeholder="PVM" name="r4" rows="1" cols="85" ></textarea> <br> -->
 	  
-Sähköposti    
-<br><input   type="email" maxlength="150" placeholder="sähköposti" name="r22" size="84" rows="2" cols="84" ><br>
-Käyntiosoite  
-<br><textarea maxlength="50" placeholder="käyntiosoite jos eri kuin yllä" name="r23" rows="2" cols="85" ></textarea> <br>
+S&#228;hk&#246;posti    
+<br><textarea   type="email" maxlength="150" placeholder="s&#228;hk&#246;posti" name="r22" size="84" rows="2" cols="84" ></textarea><br>
+K&#228;yntiosoite  
+<br><textarea maxlength="50" placeholder="k&#228;yntiosoite jos eri kuin yll&#228;" name="r23" rows="2" cols="85" ></textarea> <br>
 Puhelin 
 <br><textarea maxlength="50" placeholder="puhelin" name="r25" rows="2" cols="85" ></textarea> <br>
 MUUTA    
-<br><textarea maxlength="50" placeholder="...lisätietoja..." name="r27" rows="2" cols="85" ></textarea> <br>
+<br><textarea maxlength="50" placeholder="...lis&#228;tietoja..." name="r27" rows="2" cols="85" ></textarea> <br>
 <br>
-JATKA PAINAMALLA TÄSTÄ! <input type="submit" name="submit" value="PAINA" />
+JATKA PAINAMALLA T&#196;ST&#196;! <input type="submit" name="submit" value="PAINA" />
 <?php 
 }  
 ?>
