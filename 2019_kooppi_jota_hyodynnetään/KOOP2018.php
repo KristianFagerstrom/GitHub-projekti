@@ -30,22 +30,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 	$file = 'kooprapo_1.txt'; 
 	if (is_writable($file)) 
 		{
-		// Ensin tyhjätään tiedot...
+		// Ensin tyhj&#228;t&#228;&#228;n tiedot...
 		file_put_contents( $file, "xls" . PHP_EOL); 
 		
-		// Laitetaan uudet TIEDOT xls:n jälkeen alapuolelle
+		// Laitetaan uudet TIEDOT xls:n j&#228;lkeen alapuolelle
 		$KirjausPVM = date("Y/m/d"). " kello:" . date("h:i:s") ;
 		file_put_contents( $file, $KirjausPVM .  " KOULUTUS/OPPISOPIMUSAIHIO" . PHP_EOL, FILE_APPEND); 
-		file_put_contents( $file, "KERÄTYT TIEDOT:" .    " " . PHP_EOL, FILE_APPEND);
+		file_put_contents( $file, "KER&#196;TYT TIEDOT:" .    " " . PHP_EOL, FILE_APPEND);
 		file_put_contents( $file, $_POST['r1'] . " " . PHP_EOL, FILE_APPEND); 
 		file_put_contents( $file, $_POST['r2'] . " " . PHP_EOL, FILE_APPEND); 
-		file_put_contents( $file, "pp.kk.vv"   . " " . PHP_EOL, FILE_APPEND); //Exceliä varten 
-		file_put_contents( $file, "pp.kk.vv"   . " " . PHP_EOL, FILE_APPEND); //Exceliä varten		
+		file_put_contents( $file, "pp.kk.vv"   . " " . PHP_EOL, FILE_APPEND); //Exceli&#228; varten 
+		file_put_contents( $file, "pp.kk.vv"   . " " . PHP_EOL, FILE_APPEND); //Exceli&#228; varten		
 		file_put_contents( $file, $_POST['r22'] . " " . PHP_EOL, FILE_APPEND); 
 		file_put_contents( $file, $_POST['r23'] . " " . PHP_EOL, FILE_APPEND);  
 		file_put_contents( $file, $_POST['r25'] . " " . PHP_EOL, FILE_APPEND); 
 		file_put_contents( $file, $_POST['r27'] . " " . PHP_EOL, FILE_APPEND); 
-		file_put_contents( $file, "*LOPPU* Voit viedä tiedot esim. Exceliin tästä" . " " . PHP_EOL, FILE_APPEND);
+		file_put_contents( $file, "*LOPPU* Voit vied&#228; tiedot esim. Exceliin t&#228;st&#228;" . " " . PHP_EOL, FILE_APPEND);
 		}
 	else { print 'Suojausongelmia?';} 	
 		print '****************************** <br>' ;
@@ -53,15 +53,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 		print '****************************** <br><br>' ;
 		print '<form action="" id="form1">';
 		print '<h1> Voit tarkastaa tiedot ... </h1>' ;
-		print '<br> Paina tästä tarkastaaksesi tiedot  <button formtarget="_blank" type="submit" formaction="kooprapo_1.txt" > Tiedot näkyviin! </button>';
-		print '<br> (Voit palata takasin ja lähettää tiedot sen jälkeen eteenpäin) ' ;
-		print '<h1> Voit siirtyä takaisin ja tallentaa uudet tiedot...</h1>' ;
-		print '<br> Paina tästä siirtyäksesi takaisin  <button formtarget="_parent" type="submit"  > Takaisin! </button>';
+		print '<br> Paina t&#228;st&#228; tarkastaaksesi tiedot  <button formtarget="_blank" type="submit" formaction="kooprapo_1.txt" > Tiedot n&#228;kyviin! </button>';
+		print '<br> (Voit palata takasin ja l&#228;hett&#228;&#228; tiedot sen j&#228;lkeen eteenp&#228;in) ' ;
+		print '<h1> Voit siirty&#228; takaisin ja tallentaa uudet tiedot...</h1>' ;
+		print '<br> Paina t&#228;st&#228; siirty&#228;ksesi takaisin  <button formtarget="_parent" type="submit"  > Takaisin! </button>';
 		print '</form>';
-		print '<h1> Lopuksi voit lähettää tiedot haluamaasi s-postiin...</h1>' ;		
+		print '<h1> Lopuksi voit l&#228;hett&#228;&#228; tiedot haluamaasi s-postiin...</h1>' ;		
 		print '<form action="SEND2018.php" method="post" id="sendme" >';
 		print '<br> <br> <input name="spostia" type="email" maxlength="55" placeholder="esimerkiksi burot@bc.fi" size="25" > ';
-		print '<input type="submit" name="submit" value="Lähetä s-posti tästä!" form="sendme" >';
+		print '<input type="submit" name="submit" value="L&#228;het&#228; s-posti t&#228;st&#228;!" form="sendme" >';
 		print '</form>';
 		
 		print '<br> *-*';
