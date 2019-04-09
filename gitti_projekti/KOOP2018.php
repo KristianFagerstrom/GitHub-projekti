@@ -6,6 +6,7 @@
     text-align: center;
 // center;
     background-color: white;
+    background-image: url(images/blinds-close-up-dark-586417.jpg);
     background-size: 100% auto;
     color: #FFFFFF;
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
