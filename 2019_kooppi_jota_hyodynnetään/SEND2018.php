@@ -17,13 +17,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 // PAKOLLISTA content-type when sending HTML email
 	$headers = "MIME-Version: 1.0" . "\r\n";
 	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-	$headers .= 'From: <koop.sovellus>' . "\r\n";
+	$headers .= 'From: <kysely.botti>' . "\r\n";
 // $headers .= 'Cc: myboss@example.com' . "\r\n";
 // Lähetetään vastaanottaja, aihe, viestin sisältö, 
 // https://www.w3schools.com/php/func_mail_mail.asp
-	mail($_POST['spostia'],"KOOPSOPIMUS",$teksti, "$headers" );	
-echo "Viesti on nyt lähetetty: " . $_POST['spostia'] . " --> <br><br>  ";
-echo "Tiedot ovat myös poistettu palvelimelta <br> Kiitos! " . " --> <br><br> VOIT NYT SULKEA IKKUNAN ";
+	mail($_POST['spostia'],"moi :)",$teksti, "$headers" );	
+echo "Viesti on nyt l&#228;hetetty: " . $_POST['spostia'] . " --> <br><br>  ";
+echo "Tiedot ovat my&#246;s poistettu palvelimelta <br> Kiitos! " . " --> <br><br> VOIT NYT SULKEA IKKUNAN ";
+	echo "<div id='google_translate_element'></div>
+
+<script type='text/javascript'>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'fin'}, 'google_translate_element');
+}
+</script>
+
+<script type='text/javascript' src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>";
 }
 ?>
 </body>
