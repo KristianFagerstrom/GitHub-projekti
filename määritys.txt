@@ -1,2 +1,0 @@
-Teemme sähköpostin lähettäjän ja käytämme gittiä sen päivittämiseen.
-Xd
